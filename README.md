@@ -23,3 +23,7 @@ state, cost, states, costs = model.optimize()
 
 model.plot()
 ```
+### Get Visualize Figures
+<p align="center">
+  <img alt="Light" src=".github/img/example1.png" width="45%">
+</p>
