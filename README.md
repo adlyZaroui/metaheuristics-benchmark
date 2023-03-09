@@ -47,3 +47,27 @@ For now, available metaheuristics optimization algorithms are
 - Equilibrium Optimizer
 
 More are coming soon.
+
+# Custom Problem
+Follow the problems model defined in functions.py\
+For instance the sum of squared function $x\in \mathbb{R}^d \mapsto \sum_{i=1}^{d} x_i^2$ can be defined as follows :
+
+```python
+class custom_problem:
+    name = "custom_problem"
+    separable = False # not mandatory
+
+    def __init__(self, d): # only the attribute d is mandatory, you can add if needed
+        self.d = d
+        self.input_domain = np.array([[-100, 100] for _ in range(d)]) # CEC default search domain
+
+    def get_param(self): # dictionnary of parameters
+        return {}
+
+    def get_global_minimum(self):
+        X = np.array([0 for _ in range(d)]) # if a solution of the problem is known...
+        return (X, self(X))
+
+    def __call__(self, X): # here is the behaviour of the function when it is call
+        return sum(X**2)
+ ```
