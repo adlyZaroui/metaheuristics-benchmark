@@ -50,7 +50,8 @@ More are coming soon.
 
 # Custom Problem
 Follow the problems model defined in functions.py\
-For instance the sum of squared function \(x\in \mathbb{R}^d \mapsto \sum_{i=1}^{d} x_i^2\) can be defined as follows :
+\
+For instance the sum of squared function $x\in \mathbb{R}^d \mapsto \sum_{i=1}^{d} x_i^2$ can be defined as follows :
 
 ```python
 class custom_problem:
