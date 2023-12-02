@@ -221,7 +221,7 @@ class differential_evolution:
                 
                 if debug:
                     print ('generation : ' + str(i) + 
-                       ', generation average cost : ' + str(gen_avg) + 
+                       ', generation average cost : ' + str(gen_avg_scores) + 
                        ', generation best cost : ' + str(gen_best), +
                        ', reached at candidate : ' + str(gen_sol) + '\n')
                     
@@ -750,4 +750,3 @@ class grey_wolf_optimizer:
             costs[i] = self.cost_function(self.state)
             times[i] = t2 - t1
         return (np.min(costs),np.max(costs),np.std(costs),np.mean(times))
-    

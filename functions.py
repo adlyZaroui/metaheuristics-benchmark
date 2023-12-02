@@ -390,14 +390,3 @@ class expanded_griewank_plus_rosenbrock:
         f_7 = Lunacek_bi_Rastrigin(1)
         f_4 = Rosenbrock(2)
         return np.sum([f_7(f_4(np.array([X[i],X[i+1]]))) for i in range(self.d-2)]) + f_7(f_4(np.array([X[-1],X[0]])))
-
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    

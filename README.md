@@ -10,9 +10,17 @@ Python3 framework for comparative study of recent metaheuristics
 Our goals are
 - To implement some of the classical as well as the state-of-the-art metaheuristics.
 - To implement the IEEE-CEC benchmark functions set.
-- Create a simple interface that helps researchers, practitioners and students access optimization algorithms as quickly as possible, evaluate their performances against most common metaheuristics and share knowledge of the optimization field with everyone without a fee.
+- Create a simple interface that helps researchers, practitioners and students access optimization algorithms as quickly as possible, evaluate their performances against most common metaheuristics and share knowledge of the optimization field with everyone.
 
 # Usage
+
+```shell
+git clone https://github.com/adlyZaroui/metaheuristics-benchmark.git
+```
+
+```shell
+python -m requirements
+```
 
 ## Example
 
